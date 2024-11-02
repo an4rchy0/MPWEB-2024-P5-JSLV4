@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NIM_Soal1</title>
+    <link type="text/css" rel="stylesheet" href="style1.css">
+</head>
+<body onload="">
+    <form>
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" class="form-control" id="nama" readonly>
+        </div>
+        <div class="form-group">
+            <label>NIM</label>
+            <input type="text" class="form-control" id="nim" readonly>
+        </div>
+    </form>
+    
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() { 
+            var entNama = prompt('Masukkan Nama Anda:'); 
+            var entNim = prompt('Masukkan NIM Anda:'); 
+            if (entNama !== null && entNim !== null) { 
+                document.getElementById('nama').value = entNama; 
+                document.getElementById('nim').value = entNim; 
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
